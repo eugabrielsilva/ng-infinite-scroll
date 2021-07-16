@@ -1,0 +1,26 @@
+<html ng-app="app" ng-controller="controller">
+
+    <head>
+        <title>ng-infinite-scroll</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+        <script src="../ng-infinite-scroll.js"></script>
+        <script src="app.js"></script>
+        <style>
+            .scroll {
+                height: 100px;
+                overflow-y: scroll;
+                border: 1px solid lightgray;
+                width: 250px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="scroll" ng-infinite-scroll="lazyLoad()">
+            <div class="item" ng-repeat="item in items track by $index">{{$index + 1}}. {{item}}</div>
+        </div>
+        {{items.length}} items loaded
+    </body>
+
+</html>
