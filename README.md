@@ -1,6 +1,9 @@
 # ng-infinite-scroll
 **ng-infinite-scroll** is a very simple and lightweight AngularJS directive that allows you to create lazy loading elements with infinite scrolling effect.
 
+## Demo
+https://codepen.io/eugabrielsilva/pen/xxyByJr
+
 ## Usage
 Include the directive in your HTML code:
 
